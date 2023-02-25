@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Product Manager Dashboard</title>
+    <!-- normalize css library -->
+    <link rel='stylesheet' type='text/css'  href='../css/normalize.css'>
+    <!-- fontAweseme(icons) library -->
+    <link rel='stylesheet' type='text/css'  href='../css/all.min.css'>
+    <!-- <link rel='stylesheet' type='text/css'  href='../css/css_components/header-footer.css'> -->
+    <link rel="stylesheet" type="text/css" href="products-mngmnt.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome, [Product Manager Name]</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#pending-products">Pending Products</a></li>
+            <li><a href="#performance">Performance</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#seller-management">Seller Management</a></li>
+            <li><a href="#pricing-guidelines">Pricing Guidelines</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="pending-products">
+            <h2>Pending Products</h2>
+            <p>Here are the products that are waiting for your review:</p>
+            <ul>
+                <li>
+                    <h3>Product Name</h3>
+                    <p>Product description goes here.</p>
+                    <p>Price: $X.XX</p>
+                    <button class="approve-btn">Approve</button>
+                    <button class="reject-btn">Reject</button>
+                </li>
+                <!-- more pending products here -->
+            </ul>
+        </section>
+        <section id="seller-management">
+            <h2>Seller Management</h2>
+            <p>Manage your relationships with sellers:</p>
+            <!-- table or list of seller information here -->
+        </section>
+
+        <section id="performance">
+            <h2>Performance</h2>
+            <p>View performance data for your sellers:</p>
+            <!-- charts and data visualizations here -->
+        </section>
+
+        
+        
+        <section id="pricing-guidelines">
+            <h2>Pricing Guidelines</h2>
+            <p>Set pricing guidelines for your sellers:</p>
+            <form>
+                <label for="min-price">Minimum Price:</label>
+                <input type="number" id="min-price" name="min-price"><br>
+                
+                <label for="max-price">Maximum Price:</label>
+                <input type="number" id="max-price" name="max-price"><br>
+                
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Update your account settings:</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Ecommerce Site</p>
+    </footer>
+</body>
+
+</html>

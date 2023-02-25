@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Become a Seller</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- normalize css library -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/normalize.css'>
+    <!-- fontAweseme(icons) library -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/all.min.css'>
+    <!-- components css file  -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/css_components/header-footer.css'>
+    <!-- main css file  -->
+    <link rel='stylesheet' type='text/css' media='screen' href='seller.css'>
+</head>
+
+<body>
+    <!-- start header  -->
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo"><img src="../images/logo/logo.png" alt="QuickBuy"></a>
+            <form>
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </form>
+            <div class="links">
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul>
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../signin/login.html">Log in</a></li>
+                    <li><a href="../seller/seller.html">Become a seller</a></li>
+                    <li><a href="../product-detail/cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <!-- end header  -->
+    <!-- start main -->
+    <main class="container">
+        <section id="banner">
+            <h1>Become a Seller</h1>
+        </section>
+        <section id="seller-form">
+            <div class="holder">
+                <form>
+                    <h2>Sign up to become a seller</h2>
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-name">Company Name</label>
+                        <input type="text" id="company-name" name="company-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company-description">Company Description</label>
+                        <textarea id="company-description" name="company-description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-category">Product Category</label>
+                        <select id="product-category" name="product-category" required>
+                            <option value="">-- Please select --</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Fashion">Fashion</option>
+                            <option value="Home and Garden">Home and Garden</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-description">Product Description</label>
+                        <textarea id="product-description" name="product-description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-image">Product Image</label>
+                        <input type="file" id="product-image" name="product-image" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- end main  -->
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>
+                        Shop quick, save time.<br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut urna libero.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect with Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <!-- <img src="images/logo/logo-name.png" alt="QuickBuy"> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>
